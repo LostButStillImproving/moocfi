@@ -20,7 +20,13 @@ public class Swap {
             index++;
         }
         System.out.println("");
+        System.out.println("Give two indices to swap:");
+        int firstIndex = Integer.parseInt(scanner.nextLine());
+        int secondIndex = Integer.parseInt(scanner.nextLine());
 
+        int helperVar = array[firstIndex];
+        array[firstIndex] = array[secondIndex];
+        array[secondIndex] = helperVar;
         // Implement here
         // asking for the two indices
         // and then swapping them

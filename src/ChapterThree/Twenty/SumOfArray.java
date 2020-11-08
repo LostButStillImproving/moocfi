@@ -1,6 +1,8 @@
 package ChapterThree.Twenty;
 
 
+import java.util.Arrays;
+
 public class SumOfArray {
 
     public static void main(String[] args) {
@@ -10,7 +12,6 @@ public class SumOfArray {
     }
 
     public static int sumOfNumbersInArray(int[] array) {
-        // Write some code here
-        return 0;
+        return Arrays.stream(array).sequential().sum();
     }
 }
